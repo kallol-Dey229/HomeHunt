@@ -53,9 +53,9 @@ export default async function ListingDetailsPage({ params }: ListingPageProps) {
     : null;
 
   return (
-    <main className="min-h-screen bg-slate-50 pb-24 md:pb-12">
+    <main className="min-h-screen bg-gradient-to-b from-emerald-50/30 to-white pb-24 md:pb-12">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <Link href="/find-room" className="mb-5 inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition-colors hover:text-cyan-600">
+        <Link href="/find-room" className="mb-5 inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600">
           <ArrowLeft className="h-4 w-4" />
           Back to all rooms
         </Link>
@@ -68,7 +68,7 @@ export default async function ListingDetailsPage({ params }: ListingPageProps) {
             <Amenities amenities={listing.amenities} />
 
             {/* Reviews section */}
-            <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+            <div className="rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-6 shadow-md">
               <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <h2 className="text-lg font-bold text-slate-900">Reviews</h2>
@@ -97,9 +97,9 @@ export default async function ListingDetailsPage({ params }: ListingPageProps) {
           </div>
 
           <div className="space-y-6 lg:sticky lg:top-6 lg:self-start">
-            <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
+            <div className="rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-6 shadow-md">
               <div className="flex items-start justify-between">
-                <p className="text-2xl font-bold text-slate-900">
+                <p className="text-2xl font-bold text-emerald-700">
                   ৳{listing.rentPerMonth.toLocaleString()}
                   <span className="text-sm font-medium text-slate-500"> /month</span>
                 </p>
