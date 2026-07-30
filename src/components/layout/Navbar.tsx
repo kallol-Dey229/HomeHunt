@@ -60,18 +60,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-xl shadow-sm">
+    <nav className="sticky top-0 z-50 border-b border-white/20 bg-slate-50/90 backdrop-blur-xl shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-600 via-green-500 to-lime-400 flex items-center justify-center shadow-lg">
                 🏠
               </div>
 
               <div>
-                <h1 className="text-3xl font-black bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 bg-clip-text text-transparent">
+                <h1 className="text-3xl font-black bg-gradient-to-r from-emerald-700 via-green-600 to-lime-500 bg-clip-text text-transparent">
                   HomeHunt
                 </h1>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:bg-white hover:text-blue-600 transition"
+                  className="px-5 py-2 rounded-full text-sm font-semibold text-gray-600 hover:bg-emerald-50 hover:text-emerald-600 transition"
                 >
                   {link.label}
                 </Link>
@@ -104,14 +104,14 @@ const Navbar = () => {
               <>
                 <Link
                   href="/auth/signin"
-                  className="hidden md:flex px-5 py-2.5 rounded-full border border-gray-200 text-sm font-semibold hover:border-blue-400 hover:text-blue-600 transition"
+                  className="hidden md:flex px-5 py-2.5 rounded-full border border-gray-200 text-sm font-semibold hover:border-emerald-500 hover:text-emerald-600 transition"
                 >
                   Login
                 </Link>
 
                 <Link
                   href="/auth/signup"
-                  className="hidden md:flex px-6 py-2.5 rounded-full bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white text-sm font-semibold shadow-lg hover:scale-105 transition"
+                  className="hidden md:flex px-6 py-2.5 rounded-full bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white text-sm font-semibold shadow-lg hover:scale-105 transition"
                 >
                   Get Started
                 </Link>
@@ -134,13 +134,13 @@ const Navbar = () => {
                   </div>
 
                   <ChevronDown size={16} />
-                </button>
+                </button> 
 
                 {dropdownOpen && (
                   <div className="absolute right-0 mt-4 w-64 bg-white rounded-3xl shadow-2xl border border-gray-100 p-3">
                     <button
                       onClick={handleLogout}
-                      className="w-full text-left px-4 py-3 rounded-xl hover:bg-red-50 text-red-500 font-semibold"
+                      className="w-full text-left px-4 py-3 rounded-xl hover:bg-rose-50 text-red-500 font-semibold"
                     >
                       Logout
                     </button>
@@ -182,7 +182,7 @@ const Navbar = () => {
                   <Link
                     href="/auth/signin"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="px-4 py-3 rounded-xl border border-gray-200 text-center text-sm font-semibold hover:border-blue-400 hover:text-blue-600 transition"
+                    className="px-4 py-3 rounded-xl border border-gray-200 text-center text-sm font-semibold hover:border-emerald-500 hover:text-emerald-600 transition"
                   >
                     Login
                   </Link>
@@ -190,7 +190,7 @@ const Navbar = () => {
                   <Link
                     href="/auth/signup"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="px-4 py-3 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white text-center text-sm font-semibold shadow-lg"
+                    className="px-4 py-3 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white text-center text-sm font-semibold shadow-lg"
                   >
                     Get Started
                   </Link>

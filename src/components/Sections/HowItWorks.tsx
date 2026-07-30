@@ -35,14 +35,14 @@ const steps: Step[] = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gradient-to-b from-emerald-50/40 to-white">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
 
         <div className="text-center max-w-3xl mx-auto mb-14">
 
-          <p className="text-blue-500 font-semibold mb-3">
+          <p className="text-emerald-600 font-semibold mb-3">
             Simple Process
           </p>
 
@@ -76,13 +76,13 @@ const HowItWorks = () => {
               >
 
 
-                <div className="absolute -top-5 left-8 w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white flex items-center justify-center font-bold shadow-lg">
+                <div className="absolute -top-5 left-8 w-10 h-10 rounded-full bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white flex items-center justify-center font-bold shadow-lg">
                   {step.id}
                 </div>
 
 
-                <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 mt-3">
-                  <Icon className="text-blue-500" size={32}/>
+                <div className="w-16 h-16 rounded-2xl bg-emerald-50 flex items-center justify-center mb-6 mt-3">
+                  <Icon className="text-emerald-500" size={32}/>
                 </div>
 
 

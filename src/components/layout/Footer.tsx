@@ -27,7 +27,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="bg-gray-950 text-white mt-20">
+    <footer className="bg-slate-950 text-white mt-20">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
 
@@ -44,10 +44,10 @@ const Footer = () => {
                 <div className="
                   w-12 h-12 
                   rounded-2xl
-                  bg-gradient-to-br 
-                  from-blue-500 
-                  via-cyan-500 
-                  to-teal-400
+                  bg-gradient-to-br
+from-emerald-600
+via-green-500
+to-lime-500
                   flex items-center justify-center
                   shadow-lg
                 ">
@@ -62,9 +62,9 @@ const Footer = () => {
                     text-3xl 
                     font-black
                     bg-gradient-to-r
-                    from-blue-400
-                    via-cyan-400
-                    to-teal-300
+from-emerald-400
+via-green-400
+to-lime-300
                     bg-clip-text
                     text-transparent
                   ">
@@ -98,8 +98,8 @@ const Footer = () => {
                     rounded-full
                     bg-white/10
                     hover:bg-gradient-to-r
-                    hover:from-blue-500
-                    hover:to-cyan-500
+hover:from-emerald-600
+hover:to-lime-500
                     transition-all
                     duration-300
                     flex items-center justify-center
@@ -132,7 +132,7 @@ const Footer = () => {
                     href={link.href}
                     className="
                       text-gray-400
-                      hover:text-cyan-400
+                      hover:text-emerald-400
                       transition
                     "
                   >
@@ -163,7 +163,7 @@ const Footer = () => {
                     href={link.href}
                     className="
                       text-gray-400
-                      hover:text-cyan-400
+                      hover:text-emerald-400
                       transition
                     "
                   >
@@ -226,7 +226,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="
           border-t
-          border-white/10
+          border-emerald-900/40
           mt-12
           pt-8
           flex

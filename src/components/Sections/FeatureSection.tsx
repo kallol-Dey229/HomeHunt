@@ -56,12 +56,12 @@ const FeaturedRooms = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-12">
           <div>
-            <p className="text-blue-500 font-semibold mb-2">Featured Listings</p>
+            <p className="text-emerald-600 font-semibold mb-2">Featured Listings</p>
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900">Explore Popular Rooms</h2>
             <p className="text-gray-500 mt-4 max-w-xl">Discover comfortable and verified rooms from trusted owners around your location.</p>
           </div>
 
-          <button className="px-6 py-3 rounded-full border border-gray-200 hover:border-blue-400 hover:text-blue-600 transition font-semibold">
+          <button className="px-6 py-3 rounded-full border border-gray-200 hover:border-emerald-400 hover:text-emerald-600 transition font-semibold">
             View All Rooms
           </button>
         </div>
@@ -88,7 +88,7 @@ const FeaturedRooms = () => {
                   <Heart size={20}/>
                 </button>
 
-                <span className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-full text-sm font-semibold text-blue-600 shadow">
+                <span className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-full text-sm font-semibold text-emerald-700 shadow">
                   {room.type}
                 </span>
 
@@ -100,7 +100,7 @@ const FeaturedRooms = () => {
                 <h3 className="text-xl font-bold text-gray-900">{room.title}</h3>
 
                 <div className="flex items-center gap-2 text-gray-500 mt-3">
-                  <MapPin size={18} className="text-blue-500"/>
+                  <MapPin size={18} className="text-emerald-600"/>
                   <span>{room.location}</span>
                 </div>
 
@@ -108,12 +108,12 @@ const FeaturedRooms = () => {
                 <div className="flex items-center gap-5 mt-5 text-sm text-gray-500">
 
                   <div className="flex items-center gap-2">
-                    <BedDouble size={18} className="text-cyan-500"/>
+                    <BedDouble size={18} className="text-emerald-500"/>
                     {room.beds}
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <Bath size={18} className="text-teal-500"/>
+                    <Bath size={18} className="text-emerald-500"/>
                     {room.baths}
                   </div>
 
@@ -122,11 +122,11 @@ const FeaturedRooms = () => {
 
                 <div className="flex items-center justify-between mt-6">
 
-                  <h4 className="text-xl font-black text-blue-600">
+                  <h4 className="text-xl font-black text-emerald-700">
                     {room.price}
                   </h4>
 
-                  <button className="px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white text-sm font-semibold hover:scale-105 transition">
+                  <button className="px-5 py-2 rounded-full bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white text-sm font-semibold hover:scale-105 transition">
                     Details
                   </button>
 

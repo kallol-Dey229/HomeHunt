@@ -38,9 +38,9 @@ const HeroSection = () => {
       relative
       overflow-hidden
       bg-gradient-to-br
-      from-blue-50
-      via-white
-      to-cyan-50
+from-emerald-50
+via-white
+to-lime-50
     ">
 
 
@@ -51,7 +51,7 @@ const HeroSection = () => {
         left-10
         w-72
         h-72
-        bg-blue-400/20
+        bg-emerald-400/20
         rounded-full
         blur-3xl
       "/>
@@ -63,7 +63,7 @@ const HeroSection = () => {
         right-10
         w-80
         h-80
-        bg-cyan-400/20
+        bg-lime-400/20
         rounded-full
         blur-3xl
       "/>
@@ -116,7 +116,7 @@ const HeroSection = () => {
               border
               border-gray-100
               text-sm
-              text-blue-600
+              text-emerald-700
               font-semibold
               mb-6
             ">
@@ -137,9 +137,9 @@ const HeroSection = () => {
               <span className="
                 block
                 bg-gradient-to-r
-                from-blue-600
-                via-cyan-500
-                to-teal-400
+                from-emerald-700
+via-green-600
+to-lime-500
                 bg-clip-text
                 text-transparent
               ">
@@ -169,16 +169,16 @@ const HeroSection = () => {
 
             <motion.div
               initial={{
-                opacity:0,
-                y:30
+                opacity: 0,
+                y: 30
               }}
               animate={{
-                opacity:1,
-                y:0
+                opacity: 1,
+                y: 0
               }}
               transition={{
-                delay:0.3,
-                duration:0.7
+                delay: 0.3,
+                duration: 0.7
               }}
               className="
                 mt-8
@@ -210,7 +210,7 @@ const HeroSection = () => {
                   rounded-2xl
                   bg-gray-50
                 ">
-                  <MapPin className="text-blue-500"/>
+                  <MapPin className="text-emerald-600" />
 
                   <input
                     type="text"
@@ -236,9 +236,9 @@ const HeroSection = () => {
                     py-3
                     rounded-2xl
                     bg-gradient-to-r
-                    from-blue-500
-                    via-cyan-500
-                    to-teal-400
+from-emerald-600
+via-green-500
+to-lime-500
                     text-white
                     font-semibold
                     hover:scale-105
@@ -246,7 +246,7 @@ const HeroSection = () => {
                   "
                 >
 
-                  <Search size={20}/>
+                  <Search size={20} />
                   Search
 
                 </button>
@@ -268,7 +268,7 @@ const HeroSection = () => {
               gap-6
             ">
 
-              {features.map((item,index)=>{
+              {features.map((item, index) => {
 
                 const Icon = item.icon;
 
@@ -276,15 +276,15 @@ const HeroSection = () => {
                   <motion.div
                     key={index}
                     initial={{
-                      opacity:0,
-                      y:20
+                      opacity: 0,
+                      y: 20
                     }}
                     animate={{
-                      opacity:1,
-                      y:0
+                      opacity: 1,
+                      y: 0
                     }}
                     transition={{
-                      delay:index * 0.2
+                      delay: index * 0.2
                     }}
                     className="
                       flex
@@ -303,7 +303,7 @@ const HeroSection = () => {
                       items-center
                       justify-center
                     ">
-                      <Icon className="text-blue-500"/>
+                      <Icon className="text-emerald-600" />
                     </div>
 
 
@@ -336,15 +336,15 @@ const HeroSection = () => {
           {/* Right Image */}
           <motion.div
             initial={{
-              opacity:0,
-              scale:0.8
+              opacity: 0,
+              scale: 0.8
             }}
             animate={{
-              opacity:1,
-              scale:1
+              opacity: 1,
+              scale: 1
             }}
             transition={{
-              duration:0.8
+              duration: 0.8
             }}
             className="
               relative
@@ -377,11 +377,11 @@ const HeroSection = () => {
 
             <motion.div
               animate={{
-                y:[0,-10,0]
+                y: [0, -10, 0]
               }}
               transition={{
-                repeat:Infinity,
-                duration:3
+                repeat: Infinity,
+                duration: 3
               }}
               className="
                 absolute
@@ -402,7 +402,7 @@ const HeroSection = () => {
               <h3 className="
                 text-2xl
                 font-black
-                text-blue-600
+                text-emerald-700
               ">
                 2,500+
               </h3>

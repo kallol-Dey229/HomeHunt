@@ -67,7 +67,7 @@ const RoomCategories = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-5 mb-12">
 
           <div>
-            <p className="text-blue-500 font-semibold mb-3">
+            <p className="text-emerald-600 font-semibold mb-3">
               Explore Categories
             </p>
 
@@ -82,7 +82,7 @@ const RoomCategories = () => {
           </div>
 
 
-          <button className="px-6 py-3 rounded-full border border-gray-200 hover:border-blue-400 hover:text-blue-600 transition font-semibold">
+          <button className="px-6 py-3 rounded-full border border-gray-200 hover:border-emerald-400 hover:text-emerald-600 transition font-semibold">
             Explore More
           </button>
 
@@ -103,10 +103,10 @@ const RoomCategories = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group p-7 rounded-3xl border border-gray-100 bg-gradient-to-br from-white to-blue-50 hover:shadow-xl transition"
+                className="group p-7 rounded-3xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
               >
 
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 via-green-500 to-lime-400 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition">
                   <Icon size={30}/>
                 </div>
 
@@ -116,7 +116,7 @@ const RoomCategories = () => {
                 </h3>
 
 
-                <p className="text-blue-600 font-semibold mt-2">
+                <p className="text-emerald-600 font-semibold mt-2">
                   {category.rooms}
                 </p>
 
@@ -126,7 +126,7 @@ const RoomCategories = () => {
                 </p>
 
 
-                <button className="mt-6 text-sm font-semibold text-gray-700 hover:text-blue-600 transition">
+                <button className="mt-6 text-sm font-semibold text-gray-700 hover:text-emerald-600 transition">
                   Browse Rooms →
                 </button>
 

@@ -63,10 +63,10 @@ const PlatformStats = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
                 viewport={{ once: true }}
-                className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-6 border border-blue-100 hover:shadow-xl transition"
+                className="bg-gradient-to-br from-emerald-50 to-lime-50 rounded-3xl p-6 border border-emerald-100 hover:shadow-xl transition"
               >
 
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 flex items-center justify-center text-white mb-5 shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 flex items-center justify-center text-white mb-5 shadow-lg">
                   <Icon size={28}/>
                 </div>
 
