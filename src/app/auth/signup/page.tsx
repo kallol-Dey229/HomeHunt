@@ -96,16 +96,16 @@ export default function SignupPage() {
         initial={{ opacity: 0, x: -24 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="hidden lg:flex lg:w-1/2 flex-col justify-between p-12 relative overflow-hidden bg-gradient-to-br from-blue-950 via-cyan-950 to-teal-900"
+        className="hidden lg:flex lg:w-1/2 flex-col justify-between p-12 relative overflow-hidden bg-gradient-to-br from-emerald-950 via-green-900 to-lime-900"
       >
         <motion.div
-          className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-cyan-400/20 blur-3xl"
+          className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-emerald-400/20 blur-3xl"
           animate={{ opacity: [0.5, 0.8, 0.5], scale: [1, 1.08, 1] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         />
 
         <Link href="/" className="flex items-center gap-3 z-10">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 flex items-center justify-center text-2xl">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 flex items-center justify-center text-2xl">
             🏠
           </div>
 
@@ -120,7 +120,7 @@ export default function SignupPage() {
             className="text-5xl font-black text-white leading-tight"
           >
             Find your perfect
-            <span className="block text-cyan-300">living space.</span>
+            <span className="block text-emerald-300">living space.</span>
           </motion.h1>
 
           <motion.p
@@ -145,7 +145,7 @@ export default function SignupPage() {
                 transition={{ duration: 0.4, delay: 0.35 + index * 0.08, ease: "easeOut" }}
                 className="flex items-center gap-3 text-white/70 text-sm"
               >
-                <span className="w-2 h-2 rounded-full bg-cyan-400" />
+                <span className="w-2 h-2 rounded-full bg-emerald-400" />
                 {item}
               </motion.div>
             ))}
@@ -198,7 +198,7 @@ export default function SignupPage() {
             <motion.div variants={fieldVariants}>
               <label className="text-sm font-medium text-gray-700">Full Name</label>
 
-              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-cyan-400">
+              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-emerald-500">
                 <Person width={16} height={16} className="text-gray-400" />
 
                 <input
@@ -240,7 +240,7 @@ export default function SignupPage() {
                   whileTap={{ scale: 0.97 }}
                   className={`h-12 rounded-xl border font-semibold text-sm transition-colors ${
                     role === "tenant"
-                      ? "border-cyan-500 bg-cyan-50 text-cyan-600"
+                      ? "border-emerald-500 bg-emerald-50 text-emerald-600"
                       : "border-gray-200 bg-gray-50 text-gray-600"
                   }`}
                 >
@@ -355,7 +355,7 @@ export default function SignupPage() {
               disabled={isLoading}
               whileHover={{ scale: isLoading ? 1 : 1.02 }}
               whileTap={{ scale: isLoading ? 1 : 0.98 }}
-              className="w-full h-12 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white font-semibold shadow-lg disabled:opacity-50"
+              className="w-full h-12 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white font-semibold shadow-lg disabled:opacity-50"
             >
               {isLoading ? "Creating Account..." : "Create Account"}
             </motion.button>
@@ -363,7 +363,7 @@ export default function SignupPage() {
 
           <p className="text-center text-sm text-gray-500 mt-6">
             Already have an account?{" "}
-            <Link href="/auth/signin" className="font-semibold text-cyan-600">
+            <Link href="/auth/signin" className="font-semibold text-emerald-600 hover:text-emerald-700">
               Sign In
             </Link>
           </p>

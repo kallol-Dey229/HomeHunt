@@ -44,7 +44,7 @@ export default async function AboutPage() {
   const cities = [...new Set(listings.map((l) => l.city))];
 
   return (
-    <main className="min-h-screen bg-slate-50">
+    <main className="min-h-screen bg-gradient-to-b from-emerald-50/30 to-white">
       {/* Hero */}
       <section className="bg-white">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
@@ -73,10 +73,10 @@ export default async function AboutPage() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {steps.map(({ icon: Icon, title, description }, index) => (
             <div key={title} className="relative text-center">
-              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-white shadow-md">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 text-white shadow-md">
                 <Icon className="h-6 w-6" />
               </div>
-              <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-cyan-600">
+              <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-emerald-600">
                 Step {index + 1}
               </p>
               <h3 className="mt-1 font-bold text-slate-900">{title}</h3>
@@ -92,7 +92,7 @@ export default async function AboutPage() {
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {values.map(({ icon: Icon, title, description }) => (
             <div key={title} className="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-50 text-cyan-600">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-50 text-emerald-600">
                 <Icon className="h-5 w-5" />
               </span>
               <h3 className="mt-4 font-bold text-slate-900">{title}</h3>
@@ -104,19 +104,19 @@ export default async function AboutPage() {
 
       {/* CTA */}
       <section className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
-        <div className="rounded-2xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 p-10 shadow-lg">
+        <div className="rounded-2xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 p-10 shadow-lg">
           <h2 className="text-2xl font-bold text-white">Ready to find your next room?</h2>
           <p className="mt-2 text-white/90">Or list your own property and start receiving requests today.</p>
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               href="/find-room"
-              className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-md transition-transform duration-300 hover:scale-[1.02]"
+              className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-emerald-700 shadow-md transition-all duration-300 hover:scale-[1.02] hover:text-emerald-800"
             >
               Find a room
             </Link>
             <Link
               href="/sign-up"
-              className="rounded-xl border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-white/10"
+              className="rounded-xl border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-white/20"
             >
               List your property
             </Link>

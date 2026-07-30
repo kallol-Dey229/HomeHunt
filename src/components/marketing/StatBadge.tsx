@@ -9,7 +9,7 @@ interface StatBadgeProps {
 export default function StatBadge({ icon: Icon, value, label }: StatBadgeProps) {
   return (
     <div className="flex items-center gap-3 rounded-2xl border border-gray-100 bg-white p-5 shadow-md">
-      <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-white">
+      <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 text-white">
         <Icon className="h-5 w-5" />
       </span>
       <div>

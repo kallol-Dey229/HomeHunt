@@ -1,4 +1,4 @@
-# 🚀 RoomFinder Development Notes
+<!-- # 🚀 RoomFinder Development Notes
 
 > This document contains project setup steps, issues faced, solutions, and important notes during the development of the RoomFinder project. It serves as a personal knowledge base to avoid repeating the same mistakes in future projects.
 
@@ -1111,4 +1111,4 @@ Still open:
 
 # Personal Rule
 
-> Whenever I solve a bug that takes more than 15 minutes, I document it here before continuing development. Future me will thank present me.
+> Whenever I solve a bug that takes more than 15 minutes, I document it here before continuing development. Future me will thank present me. -->

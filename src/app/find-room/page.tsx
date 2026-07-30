@@ -52,8 +52,8 @@ export default function FindRoomPage() {
   }, [city, bedrooms, maxRent]);
 
   return (
-    <main className="min-h-screen bg-slate-50">
-      <section className="bg-white">
+    <main className="min-h-screen bg-gradient-to-b from-emerald-50/30 to-white">
+      <section className="bg-gradient-to-b from-emerald-50/40 to-white">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">Find your next room</h1>
           <p className="mt-2 max-w-xl text-slate-500">
@@ -61,8 +61,8 @@ export default function FindRoomPage() {
           </p>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <div className="flex flex-1 items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-md transition-shadow duration-300 focus-within:shadow-xl">
-              <Search className="h-5 w-5 flex-shrink-0 text-slate-400" />
+            <div className="flex flex-1 items-center gap-3 rounded-xl border border-emerald-100 bg-white px-4 py-3 shadow-md transition-all duration-300 focus-within:border-emerald-400 focus-within:ring-2 focus-within:ring-emerald-100">
+              <Search className="h-5 w-5 flex-shrink-0 text-emerald-500" />
               <input
                 type="text"
                 value={city}
@@ -79,7 +79,7 @@ export default function FindRoomPage() {
 
             <button
               onClick={() => setShowFilters((v) => !v)}
-              className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]"
+              className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]"
             >
               <SlidersHorizontal className="h-4 w-4" />
               Filters
@@ -87,7 +87,7 @@ export default function FindRoomPage() {
           </div>
 
           {showFilters && (
-            <div className="mt-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-md">
+            <div className="mt-4 rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-5 shadow-md">
               <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-wrap gap-2">
                   <button
@@ -106,8 +106,8 @@ export default function FindRoomPage() {
                       onClick={() => setBedrooms(n)}
                       className={`rounded-lg px-3.5 py-2 text-sm font-medium transition-colors duration-300 ${
                         bedrooms === n
-                          ? "bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white shadow-md"
-                          : "bg-slate-50 text-slate-600 hover:bg-slate-100"
+                          ? "bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white shadow-md"
+                          : "bg-emerald-50 text-slate-700 hover:bg-emerald-100"
                       }`}
                     >
                       {n} bed{n > 1 ? "s" : ""}
@@ -126,7 +126,7 @@ export default function FindRoomPage() {
                     step={1000}
                     value={maxRent}
                     onChange={(e) => setMaxRent(Number(e.target.value))}
-                    className="w-full accent-cyan-500"
+                    className="w-full accent-emerald-600"
                   />
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function FindRoomPage() {
 
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-center gap-2">
-          {isLoading && <Loader2 className="h-4 w-4 animate-spin text-cyan-500" />}
+          {isLoading && <Loader2 className="h-4 w-4 animate-spin text-emerald-600" />}
           <p className="text-sm text-slate-500">
             {isLoading ? (
               "Searching…"
@@ -156,8 +156,8 @@ export default function FindRoomPage() {
         )}
 
         {!isLoading && !error && listings.length === 0 && (
-          <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-gray-100 bg-white py-20 text-center shadow-md">
-            <MapPin className="h-8 w-8 text-slate-300" />
+          <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 py-20 text-center shadow-md">
+            <MapPin className="h-8 w-8 text-emerald-400" />
             <p className="font-semibold text-slate-700">No rooms match your search</p>
             <p className="text-sm text-slate-500">Try adjusting your filters or search term.</p>
           </div>

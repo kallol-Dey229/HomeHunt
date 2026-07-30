@@ -21,9 +21,9 @@ export default async function PropertiesPage() {
       : 0;
 
   return (
-    <main className="min-h-screen bg-slate-50">
+    <main className="min-h-screen bg-gradient-to-b from-emerald-50/30 to-white">
       {/* Hero */}
-      <section className="bg-white">
+      <section className="bg-gradient-to-b from-emerald-50/40 to-white">
         <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">Browse our properties</h1>
           <p className="mx-auto mt-3 max-w-xl text-slate-500">
@@ -32,7 +32,7 @@ export default async function PropertiesPage() {
 
           <Link
             href="/find-room"
-            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]"
+            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]"
           >
             Search all properties
             <ArrowRight className="h-4 w-4" />
@@ -54,14 +54,14 @@ export default async function PropertiesPage() {
             <Link
               key={label}
               href={`/find-room?bedrooms=${bedrooms}`}
-              className="group flex items-center gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group flex items-center gap-4 rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-white">
+              <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 text-white">
                 <Icon className="h-5 w-5" />
               </span>
               <div>
                 <p className="font-semibold text-slate-900">{label}</p>
-                <p className="text-sm text-slate-500 transition-colors group-hover:text-cyan-600">
+                <p className="text-sm text-slate-500 transition-colors group-hover:text-emerald-600">
                   Explore listings →
                 </p>
               </div>
@@ -79,9 +79,9 @@ export default async function PropertiesPage() {
               <Link
                 key={city}
                 href={`/find-room?city=${encodeURIComponent(city)}`}
-                className="flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 shadow-sm transition-colors duration-300 hover:border-cyan-300 hover:bg-cyan-50 hover:text-cyan-700"
+                className="flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 shadow-sm transition-all duration-300 hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-700"
               >
-                <MapPin className="h-4 w-4 text-cyan-500" />
+                <MapPin className="h-4 w-4 text-emerald-500" />
                 {city}
               </Link>
             ))}
@@ -93,13 +93,13 @@ export default async function PropertiesPage() {
       <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-center justify-between">
           <h2 className="text-xl font-bold text-slate-900">Featured properties</h2>
-          <Link href="/find-room" className="text-sm font-semibold text-cyan-600 hover:text-cyan-700">
+          <Link href="/find-room" className="text-sm font-semibold text-emerald-600 hover:text-emerald-700">
             View all →
           </Link>
         </div>
 
         {featured.length === 0 ? (
-          <div className="rounded-2xl border border-gray-100 bg-white p-10 text-center shadow-md">
+          <div className="rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-10 text-center shadow-md">
             <p className="text-slate-500">No properties available right now — check back soon.</p>
           </div>
         ) : (

@@ -1,4 +1,4 @@
-# 🏠 RoomFinder
+<!-- # 🏠 RoomFinder
 
 A room and apartment rental marketplace connecting tenants directly with room owners — no brokers, verified listings, and a straightforward booking flow.
 
@@ -190,4 +190,4 @@ npm start
 ## 📚 Related Docs
 - `docs/dev-notes.md` — full build log: issues hit, root causes, fixes, and lessons learned
 - `docs/postman-api-guide.md` — Postman collection guide for the backend REST API
-- `docs/postman-jwt-guide.md` — step-by-step JWT auth flow testing in Postman
+- `docs/postman-jwt-guide.md` — step-by-step JWT auth flow testing in Postman -->
