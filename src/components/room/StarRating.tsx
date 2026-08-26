@@ -30,7 +30,7 @@ export default function StarRating({ value, onChange, size = 20, readOnly = fals
         >
           <Star
             style={{ width: size, height: size }}
-            className={star <= displayValue ? "fill-cyan-500 text-cyan-500" : "fill-none text-slate-300"}
+            className={star <= displayValue ? "fill-emerald-500 text-emerald-500" : "fill-none text-slate-300"}
           />
         </button>
       ))}

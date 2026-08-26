@@ -67,8 +67,8 @@ export default async function AdminAnalyticsPage() {
         <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
           <h3 className="mb-4 text-lg font-bold text-slate-900">Users by Role</h3>
           <div className="space-y-4">
-            <BarRow label="Tenants" count={tenants} total={users.length} colorClass="bg-gradient-to-r from-blue-500 to-cyan-400" />
-            <BarRow label="Owners" count={owners} total={users.length} colorClass="bg-gradient-to-r from-cyan-500 to-teal-400" />
+            <BarRow label="Tenants" count={tenants} total={users.length} colorClass="bg-gradient-to-r from-blue-500 to-emerald-400" />
+            <BarRow label="Owners" count={owners} total={users.length} colorClass="bg-gradient-to-r from-emerald-500 to-teal-400" />
             <BarRow label="Admins" count={admins} total={users.length} colorClass="bg-slate-400" />
           </div>
         </div>

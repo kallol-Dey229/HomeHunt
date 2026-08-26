@@ -24,7 +24,7 @@ export default function OwnerCard({ owner, isOwnListing }: OwnerCardProps) {
         <div>
           <div className="flex items-center gap-1.5">
             <h3 className="font-bold text-slate-900">{owner?.name ?? "Unknown owner"}</h3>
-            {isOwnListing && <BadgeCheck className="h-4 w-4 text-cyan-500" />}
+            {isOwnListing && <BadgeCheck className="h-4 w-4 text-emerald-500" />}
           </div>
           <p className="text-sm text-slate-500">{isOwnListing ? "This is you" : "Room owner"}</p>
         </div>
@@ -50,7 +50,7 @@ export default function OwnerCard({ owner, isOwnListing }: OwnerCardProps) {
       {owner?.email && !isOwnListing && (
         <a
           href={`mailto:${owner.email}`}
-          className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-4 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]"
+          className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-4 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]"
         >
           <Mail className="h-4 w-4" />
           Message Owner

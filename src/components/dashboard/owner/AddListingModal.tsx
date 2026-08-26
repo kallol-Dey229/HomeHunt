@@ -7,7 +7,7 @@ import AddListingForm from "@/components/dashboard/owner/AddListingForm";
 export default function AddListingModal() {
   return (
     <Modal>
-      <Button className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+      <Button className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02]">
         <Plus className="h-4 w-4" />
         Add Listing
       </Button>

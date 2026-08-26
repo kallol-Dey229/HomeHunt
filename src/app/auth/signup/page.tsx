@@ -215,7 +215,7 @@ export default function SignupPage() {
             <motion.div variants={fieldVariants}>
               <label className="text-sm font-medium text-gray-700">Email Address</label>
 
-              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-cyan-400">
+              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-emerald-400">
                 <At width={16} height={16} className="text-gray-400" />
 
                 <input
@@ -253,7 +253,7 @@ export default function SignupPage() {
                   whileTap={{ scale: 0.97 }}
                   className={`h-12 rounded-xl border font-semibold text-sm transition-colors ${
                     role === "owner"
-                      ? "border-cyan-500 bg-cyan-50 text-cyan-600"
+                      ? "border-emerald-500 bg-emerald-50 text-emerald-600"
                       : "border-gray-200 bg-gray-50 text-gray-600"
                   }`}
                 >
@@ -266,7 +266,7 @@ export default function SignupPage() {
             <motion.div variants={fieldVariants}>
               <label className="text-sm font-medium text-gray-700">Password</label>
 
-              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-cyan-400">
+              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-emerald-400">
                 <ShieldKeyhole width={16} height={16} className="text-gray-400" />
 
                 <input
@@ -296,7 +296,7 @@ export default function SignupPage() {
             <motion.div variants={fieldVariants}>
               <label className="text-sm font-medium text-gray-700">Confirm Password</label>
 
-              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-cyan-400">
+              <div className="flex items-center gap-2 h-12 px-4 mt-2 rounded-xl border border-gray-200 bg-gray-50 transition-colors focus-within:bg-white focus-within:border-emerald-400">
                 <ShieldKeyhole width={16} height={16} className="text-gray-400" />
 
                 <input

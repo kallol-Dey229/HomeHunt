@@ -35,7 +35,7 @@ export default function UserRoleSelect({ userId, currentRole }: { userId: string
         value={role}
         onChange={handleChange}
         disabled={isPending}
-        className="rounded-lg border border-gray-200 bg-white px-2.5 py-1.5 text-xs font-semibold text-slate-600 outline-none transition focus:border-cyan-400 disabled:opacity-60"
+        className="rounded-lg border border-gray-200 bg-white px-2.5 py-1.5 text-xs font-semibold text-slate-600 outline-none transition focus:border-emerald-400 disabled:opacity-60"
       >
         {roles.map((r) => (
           <option key={r} value={r}>

@@ -24,7 +24,7 @@ export default function BookingActionButtons({ bookingId, ownerId }: { bookingId
         <button
           onClick={() => act("approved")}
           disabled={isPending}
-          className="flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:scale-[1.02] disabled:opacity-60"
+          className="flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:scale-[1.02] disabled:opacity-60"
         >
           <Check className="h-3.5 w-3.5" />
           Approve

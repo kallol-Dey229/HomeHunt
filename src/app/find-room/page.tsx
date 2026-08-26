@@ -94,7 +94,7 @@ export default function FindRoomPage() {
                     onClick={() => setBedrooms("All")}
                     className={`rounded-lg px-3.5 py-2 text-sm font-medium transition-colors duration-300 ${
                       bedrooms === "All"
-                        ? "bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white shadow-md"
+                        ? "bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white shadow-md"
                         : "bg-slate-50 text-slate-600 hover:bg-slate-100"
                     }`}
                   >

@@ -12,19 +12,19 @@ export default function RoomDetails({ listing }: RoomDetailsProps) {
         <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">{listing.title}</h1>
 
         <div className="flex items-center gap-1.5 text-sm text-slate-500">
-          <MapPin className="h-4 w-4 text-cyan-500" />
+          <MapPin className="h-4 w-4 text-emerald-500" />
           {listing.address}, {listing.city}
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
         <div className="rounded-2xl border border-gray-100 bg-white p-4 text-center shadow-md">
-          <BedDouble className="mx-auto mb-2 h-5 w-5 text-cyan-500" />
+          <BedDouble className="mx-auto mb-2 h-5 w-5 text-emerald-500" />
           <p className="text-sm font-bold text-slate-900">{listing.bedrooms}</p>
           <p className="text-xs text-slate-500">Bedrooms</p>
         </div>
         <div className="rounded-2xl border border-gray-100 bg-white p-4 text-center shadow-md">
-          <Bath className="mx-auto mb-2 h-5 w-5 text-cyan-500" />
+          <Bath className="mx-auto mb-2 h-5 w-5 text-emerald-500" />
           <p className="text-sm font-bold text-slate-900">{listing.bathrooms}</p>
           <p className="text-xs text-slate-500">Bathrooms</p>
         </div>

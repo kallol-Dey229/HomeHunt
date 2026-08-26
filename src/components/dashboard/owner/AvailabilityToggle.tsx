@@ -25,7 +25,7 @@ export default function AvailabilityToggle({ listingId, initialValue }: { listin
       onClick={toggle}
       disabled={isPending}
       className={`relative h-6 w-11 flex-shrink-0 rounded-full transition-colors duration-300 disabled:opacity-60 ${
-        isAvailable ? "bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400" : "bg-slate-200"
+        isAvailable ? "bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500" : "bg-slate-200"
       }`}
       aria-label={isAvailable ? "Mark as unavailable" : "Mark as available"}
     >

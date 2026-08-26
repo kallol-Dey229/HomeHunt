@@ -96,7 +96,7 @@ export default function ImageUploader({
         role="button"
         tabIndex={0}
         className={`flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed px-6 py-8 text-center transition-colors duration-300 ${
-          isDragging ? "border-cyan-400 bg-cyan-50" : "border-gray-200 bg-slate-50 hover:bg-slate-100"
+          isDragging ? "border-emerald-400 bg-emerald-50" : "border-gray-200 bg-slate-50 hover:bg-slate-100"
         }`}
       >
         <ImagePlus className="h-6 w-6 text-slate-400" />

@@ -36,7 +36,7 @@ export default async function AdminListingsPage({ searchParams }: AdminListingsP
             href={tab.value === "all" ? "/dashboard/admin/listings" : `/dashboard/admin/listings?status=${tab.value}`}
             className={`rounded-lg px-3.5 py-2 text-sm font-medium transition-colors duration-300 ${
               (activeStatus ?? "all") === tab.value
-                ? "bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white shadow-md"
+                ? "bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white shadow-md"
                 : "bg-slate-50 text-slate-600 hover:bg-slate-100"
             }`}
           >
@@ -60,7 +60,7 @@ export default async function AdminListingsPage({ searchParams }: AdminListingsP
               </div>
 
               <div className="flex-1">
-                <Link href={`/find-room/${listing._id}`} className="font-semibold text-slate-900 hover:text-cyan-600">
+                <Link href={`/find-room/${listing._id}`} className="font-semibold text-slate-900 hover:text-emerald-600">
                   {listing.title}
                 </Link>
                 <p className="mt-1 text-sm text-slate-500">

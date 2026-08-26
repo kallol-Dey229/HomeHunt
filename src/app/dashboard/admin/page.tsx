@@ -47,7 +47,7 @@ export default async function AdminDashboardPage() {
       <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-md">
         <div className="mb-4 flex items-center justify-between">
           <h3 className="text-lg font-bold text-slate-900">Listings Awaiting Approval</h3>
-          <Link href="/dashboard/admin/listings?status=pending" className="text-sm font-semibold text-cyan-600 hover:text-cyan-700">
+          <Link href="/dashboard/admin/listings?status=pending" className="text-sm font-semibold text-emerald-600 hover:text-emerald-700">
             Review all →
           </Link>
         </div>

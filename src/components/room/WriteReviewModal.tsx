@@ -97,7 +97,7 @@ export default function WriteReviewModal({
                       onChange={(e) => setComment(e.target.value)}
                       rows={3}
                       placeholder="How was your experience with this room?"
-                      className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none transition-colors focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-100"
+                      className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none transition-colors focus-visible:border-emerald-400 focus-visible:ring-2 focus-visible:ring-emerald-100"
                     />
                   </div>
 
@@ -105,7 +105,7 @@ export default function WriteReviewModal({
                     type="button"
                     onClick={() => handleSubmit(close)}
                     disabled={isSubmitting}
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60"
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
                     {isSubmitting ? "Submitting…" : existingReview ? "Update Review" : "Submit Review"}

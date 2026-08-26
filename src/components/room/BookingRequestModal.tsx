@@ -157,7 +157,7 @@ export default function BookingRequestModal({
                   type="submit"
                   isPending={isSubmitting}
                   isDisabled={isSubmitting}
-                  className="gap-2 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 font-semibold text-white shadow-lg"
+                  className="gap-2 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 font-semibold text-white shadow-lg"
                 >
                   {isSubmitting ? <Spinner size="sm" /> : <Send className="h-4 w-4" />}
                   {isSubmitting ? "Sending…" : "Send Request"}

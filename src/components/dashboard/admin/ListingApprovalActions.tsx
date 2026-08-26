@@ -39,7 +39,7 @@ export default function ListingApprovalActions({ listingId }: { listingId: strin
           <button
             onClick={approve}
             disabled={isPending}
-            className="flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:scale-[1.02] disabled:opacity-60"
+            className="flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:scale-[1.02] disabled:opacity-60"
           >
             <Check className="h-3.5 w-3.5" />
             Approve
@@ -60,7 +60,7 @@ export default function ListingApprovalActions({ listingId }: { listingId: strin
             onChange={(e) => setReason(e.target.value)}
             placeholder="Reason for rejection (optional)"
             rows={2}
-            className="w-full rounded-lg border border-gray-200 px-3 py-2 text-xs text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+            className="w-full rounded-lg border border-gray-200 px-3 py-2 text-xs text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
           <div className="flex justify-end gap-2">
             <button

@@ -49,7 +49,7 @@ export default function Amenities({ amenities }: AmenitiesProps) {
               key={amenity}
               className="flex items-center gap-3 rounded-xl bg-slate-50 px-3 py-3 text-sm text-slate-700"
             >
-              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-white">
+              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 text-white">
                 <Icon className="h-4 w-4" strokeWidth={2} />
               </span>
               <span className="font-medium">{amenity}</span>

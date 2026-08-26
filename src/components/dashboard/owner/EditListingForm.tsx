@@ -106,7 +106,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           rows={4}
-          className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+          className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
         />
       </div>
 
@@ -117,7 +117,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             type="text"
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
         <div>
@@ -126,7 +126,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
       </div>
@@ -139,7 +139,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             min={0}
             value={rentPerMonth}
             onChange={(e) => setRentPerMonth(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
         <div>
@@ -149,7 +149,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             min={0}
             value={bedrooms}
             onChange={(e) => setBedrooms(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
         <div>
@@ -159,7 +159,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             min={0}
             value={bathrooms}
             onChange={(e) => setBathrooms(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
       </div>
@@ -178,7 +178,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
               }
             }}
             placeholder="e.g. Wi-Fi, then press Enter"
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
           <button
             type="button"

@@ -35,7 +35,7 @@ export default function RoomCard({ listing, tenantId, isSaved = false }: RoomCar
 
         {listing.reviewCount > 0 && (
           <span className="absolute left-3 top-3 flex items-center gap-1 rounded-full bg-white/95 px-2.5 py-1 text-xs font-semibold text-slate-800 shadow-sm">
-            <Star className="h-3.5 w-3.5 fill-cyan-500 text-cyan-500" />
+            <Star className="h-3.5 w-3.5 fill-emerald-500 text-emerald-500" />
             {listing.ratingAverage.toFixed(1)}
           </span>
         )}
@@ -53,7 +53,7 @@ export default function RoomCard({ listing, tenantId, isSaved = false }: RoomCar
         <h3 className="line-clamp-1 text-base font-bold text-slate-900">{listing.title}</h3>
 
         <div className="flex items-center gap-1.5 text-sm text-slate-500">
-          <MapPin className="h-4 w-4 flex-shrink-0 text-cyan-500" />
+          <MapPin className="h-4 w-4 flex-shrink-0 text-emerald-500" />
           <span className="line-clamp-1">
             {listing.address}, {listing.city}
           </span>

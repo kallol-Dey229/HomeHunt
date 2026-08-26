@@ -36,7 +36,7 @@ export default async function OwnerBookingsPage() {
               </div>
 
               <div className="flex-1">
-  <Link href={`/find-room/${booking.listingId}`} className="font-semibold text-slate-900 hover:text-cyan-600">
+  <Link href={`/find-room/${booking.listingId}`} className="font-semibold text-slate-900 hover:text-emerald-600">
     {booking.listing?.title ?? "Listing"}
   </Link>
   <p className="mt-1 text-sm text-slate-700">{booking.tenantName} · {booking.tenantPhone}</p>
