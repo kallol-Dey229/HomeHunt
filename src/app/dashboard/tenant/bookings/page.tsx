@@ -23,7 +23,7 @@ export default async function TenantBookingsPage() {
       {bookings.length === 0 ? (
         <div className="rounded-2xl border border-gray-100 bg-white p-10 text-center shadow-md">
           <p className="text-slate-500">You haven&apos;t requested any rooms yet.</p>
-          <Link href="/find-room" className="mt-3 inline-block text-sm font-semibold text-cyan-600 hover:text-cyan-700">
+          <Link href="/find-room" className="mt-3 inline-block text-sm font-semibold text-emerald-600 hover:text-emerald-700">
             Browse rooms →
           </Link>
         </div>
@@ -38,7 +38,7 @@ export default async function TenantBookingsPage() {
               </div>
 
               <div className="flex-1">
-                <Link href={`/find-room/${booking.listingId}`} className="font-semibold text-slate-900 hover:text-cyan-600">
+                <Link href={`/find-room/${booking.listingId}`} className="font-semibold text-slate-900 hover:text-emerald-600">
                   {booking.listing?.title ?? "Listing no longer available"}
                 </Link>
                 <p className="mt-1 text-sm text-slate-500">৳{booking.listing?.rentPerMonth.toLocaleString() ?? "—"} / month</p>

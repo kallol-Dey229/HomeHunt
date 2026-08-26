@@ -96,7 +96,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+          className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
         />
       </div>
 
@@ -126,7 +126,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
       </div>
@@ -139,7 +139,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             min={0}
             value={rentPerMonth}
             onChange={(e) => setRentPerMonth(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
         <div>
@@ -149,7 +149,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             min={0}
             value={bedrooms}
             onChange={(e) => setBedrooms(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
         <div>
@@ -159,7 +159,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
             min={0}
             value={bathrooms}
             onChange={(e) => setBathrooms(e.target.value)}
-            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100"
+            className="w-full rounded-xl border border-gray-200 px-4 py-2.5 text-sm text-slate-700 outline-none focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
       </div>
@@ -211,7 +211,7 @@ export default function EditListingForm({ listing, onSuccess }: EditListingFormP
       <button
         type="submit"
         disabled={isSubmitting || isImagesUploading}
-        className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
+        className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
       >
         {isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
         {isSubmitting ? "Saving…" : "Save Changes"}

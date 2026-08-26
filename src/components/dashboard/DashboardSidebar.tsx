@@ -44,12 +44,17 @@ export default function DashboardSidebar({
   const sidebarContent = (
     <div className="flex h-full flex-col">
       {/* Logo */}
-      <div className={`flex items-center gap-3 px-5 py-6 ${isCollapsed ? "justify-center px-0" : ""}`}>
-        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 text-lg shadow-md">
+      <div
+        className={`flex items-center gap-3 px-5 py-6 ${
+          isCollapsed ? "justify-center px-0" : ""
+        }`}
+      >
+        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 text-lg shadow-md">
           🏠
         </div>
+
         {!isCollapsed && (
-          <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 bg-clip-text text-xl font-black text-transparent">
+          <span className="bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 bg-clip-text text-xl font-black text-transparent">
             HomeHunt
           </span>
         )}
@@ -60,6 +65,7 @@ export default function DashboardSidebar({
         {navItems.map((item) => {
           const Icon = item.icon;
           const active = isActive(item.href);
+
           return (
             <Link
               key={item.href}
@@ -68,11 +74,12 @@ export default function DashboardSidebar({
               title={isCollapsed ? item.label : undefined}
               className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-colors duration-200 ${
                 active
-                  ? "bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-400 text-white shadow-md"
-                  : "text-slate-600 hover:bg-slate-100"
+                  ? "bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white shadow-md"
+                  : "text-slate-600 hover:bg-emerald-50 hover:text-emerald-700"
               } ${isCollapsed ? "justify-center" : ""}`}
             >
               <Icon className="h-5 w-5 flex-shrink-0" />
+
               {!isCollapsed && <span>{item.label}</span>}
             </Link>
           );
@@ -82,24 +89,43 @@ export default function DashboardSidebar({
       {/* Collapse toggle - desktop only */}
       <button
         onClick={onToggleCollapse}
-        className="mx-3 mb-2 hidden items-center justify-center gap-2 rounded-xl border border-gray-100 py-2 text-xs font-medium text-slate-500 transition-colors hover:bg-slate-50 md:flex"
+        className="mx-3 mb-2 hidden items-center justify-center gap-2 rounded-xl border border-gray-100 py-2 text-xs font-medium text-slate-500 transition-colors hover:bg-emerald-50 hover:text-emerald-700 md:flex"
       >
-        {isCollapsed ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
+        {isCollapsed ? (
+          <ChevronRight className="h-4 w-4" />
+        ) : (
+          <ChevronLeft className="h-4 w-4" />
+        )}
+
         {!isCollapsed && "Collapse"}
       </button>
 
       {/* Profile + logout */}
-      <div className={`border-t border-gray-100 p-3 ${isCollapsed ? "px-2" : ""}`}>
-        <div className={`flex items-center gap-3 rounded-xl p-2 ${isCollapsed ? "justify-center" : ""}`}>
+      <div
+        className={`border-t border-gray-100 p-3 ${
+          isCollapsed ? "px-2" : ""
+        }`}
+      >
+        <div
+          className={`flex items-center gap-3 rounded-xl p-2 ${
+            isCollapsed ? "justify-center" : ""
+          }`}
+        >
           <img
             src={user?.image || "https://i.pravatar.cc/100"}
             alt="profile"
             className="h-9 w-9 flex-shrink-0 rounded-full object-cover"
           />
+
           {!isCollapsed && (
             <div className="min-w-0">
-              <p className="truncate text-sm font-semibold text-slate-800">{user?.name}</p>
-              <p className="text-xs capitalize text-slate-400">{role}</p>
+              <p className="truncate text-sm font-semibold text-slate-800">
+                {user?.name}
+              </p>
+
+              <p className="text-xs capitalize text-slate-400">
+                {role}
+              </p>
             </div>
           )}
         </div>
@@ -111,6 +137,7 @@ export default function DashboardSidebar({
           }`}
         >
           <LogOut className="h-4 w-4 flex-shrink-0" />
+
           {!isCollapsed && "Logout"}
         </button>
       </div>
@@ -139,6 +166,7 @@ export default function DashboardSidebar({
               onClick={onMobileClose}
               className="fixed inset-0 z-40 bg-slate-900/40 md:hidden"
             />
+
             <motion.aside
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
@@ -148,10 +176,11 @@ export default function DashboardSidebar({
             >
               <button
                 onClick={onMobileClose}
-                className="absolute right-4 top-6 flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 hover:bg-slate-100"
+                className="absolute right-4 top-6 flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 hover:bg-emerald-50 hover:text-emerald-700"
               >
                 <X className="h-4 w-4" />
               </button>
+
               {sidebarContent}
             </motion.aside>
           </>
