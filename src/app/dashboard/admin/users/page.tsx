@@ -30,7 +30,7 @@ export default async function ManageUsersPage() {
               <tr key={user.id}>
                 <td className="px-5 py-3">
                   <div className="flex items-center gap-3">
-                    <div className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full bg-slate-100">
+                    <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full bg-slate-100">
                       {user.image ? (
                         <Image src={user.image} alt={user.name} fill sizes="36px" className="object-cover" />
                       ) : (

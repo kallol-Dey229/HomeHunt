@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Users, Building2, ClipboardList, Clock } from "lucide-react";
-// import { getAllUsers } from "@/lib/api/users";
 import { getAllListingsAdmin } from "@/lib/api/listing";
 // import { getAllBookings } from "@/lib/api/bookings";
 import StatCard from "@/components/dashboard/StatCard";
