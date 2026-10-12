@@ -6,7 +6,6 @@ import { getOwnerBookings } from "@/lib/api/bookings";
 import BookingStatusBadge from "@/components/dashboard/BookingStatusBadge";
 import BookingActionButtons from "@/components/dashboard/BookingActionButtons";
 import { getUserSession } from "@/lib/core/session";
-// import BookingActionButtons from "@/components/dashboard/owner/BookingActionButtons";
 
 export default async function OwnerBookingsPage() {
   const user = await getUserSession();
@@ -29,7 +28,7 @@ export default async function OwnerBookingsPage() {
         <div className="space-y-4">
           {bookings.map((booking) => (
             <div key={booking._id} className="flex flex-col gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-md sm:flex-row sm:items-center">
-              <div className="relative h-20 w-28 flex-shrink-0 overflow-hidden rounded-xl bg-slate-100">
+              <div className="relative h-20 w-28 shrink-0 overflow-hidden rounded-xl bg-slate-100">
                 {booking.listing?.images[0] && (
                   <Image src={booking.listing.images[0]} alt={booking.listing.title} fill sizes="112px" className="object-cover" />
                 )}
