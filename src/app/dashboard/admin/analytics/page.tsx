@@ -1,6 +1,5 @@
 import { Users, Building2, ClipboardList, TrendingUp } from "lucide-react";
 import { getAllListingsAdmin } from "@/lib/api/listing";
-// import { getAllBookings } from "@/lib/api/bookings";
 import StatCard from "@/components/dashboard/StatCard";
 import { getAllBookings } from "@/lib/actions/bookings";
 import { getAllUsers } from "@/lib/api/user";

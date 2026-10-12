@@ -36,7 +36,7 @@ export default async function AdminListingsPage({ searchParams }: AdminListingsP
             href={tab.value === "all" ? "/dashboard/admin/listings" : `/dashboard/admin/listings?status=${tab.value}`}
             className={`rounded-lg px-3.5 py-2 text-sm font-medium transition-colors duration-300 ${
               (activeStatus ?? "all") === tab.value
-                ? "bg-gradient-to-r from-emerald-600 via-green-500 to-lime-500 text-white shadow-md"
+                ? "bg-linear-to-r from-emerald-600 via-green-500 to-lime-500 text-white shadow-md"
                 : "bg-slate-50 text-slate-600 hover:bg-slate-100"
             }`}
           >
@@ -53,7 +53,7 @@ export default async function AdminListingsPage({ searchParams }: AdminListingsP
         <div className="space-y-4">
           {listings.map((listing) => (
             <div key={listing._id} className="flex flex-col gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-md sm:flex-row sm:items-center">
-              <div className="relative h-20 w-28 flex-shrink-0 overflow-hidden rounded-xl bg-slate-100">
+              <div className="relative h-20 w-28 shrink-0 overflow-hidden rounded-xl bg-slate-100">
                 {listing.images[0] && (
                   <Image src={listing.images[0]} alt={listing.title} fill sizes="112px" className="object-cover" />
                 )}
