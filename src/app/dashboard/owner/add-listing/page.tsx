@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { Pencil } from "lucide-react";
 import { getUserSession } from "@/lib/core/session";
 import { getOwnerListings } from "@/lib/api/listing";
 import ListingStatusBadge from "@/components/dashboard/ListingStatusBadge";
@@ -34,7 +33,7 @@ export default async function OwnerListingsPage() {
         <div className="space-y-4">
           {listings.map((listing) => (
             <div key={listing._id} className="flex flex-col gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-md sm:flex-row sm:items-center">
-              <div className="relative h-20 w-28 flex-shrink-0 overflow-hidden rounded-xl bg-slate-100">
+              <div className="relative h-20 w-28 shrink-0 overflow-hidden rounded-xl bg-slate-100">
                 {listing.images[0] && (
                   <Image src={listing.images[0]} alt={listing.title} fill sizes="112px" className="object-cover" />
                 )}
