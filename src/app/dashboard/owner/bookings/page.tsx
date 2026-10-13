@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-// import { getUserSession } from "@/lib/session";
 import { getOwnerBookings } from "@/lib/api/bookings";
 import BookingStatusBadge from "@/components/dashboard/BookingStatusBadge";
 import BookingActionButtons from "@/components/dashboard/BookingActionButtons";
